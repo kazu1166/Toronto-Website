@@ -1,0 +1,865 @@
+/* for common setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: #fafeff;
+  width: 100%;
+  font-family: 'Yu Gothic', 'Noto Sans JP', sans-serif;
+}
+
+.logo-letter {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, dd, span {
+  font-family: 'Rounded M+', sans-serif;
+}
+
+html[lang="en"] body {
+  font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+}
+
+html[lang="en"] h1, html[lang="en"] h2, html[lang="en"] h3, html[lang="en"] h4{
+  font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
+}
+
+/*
+1. 日本語フォント
+リンク、ヘッディング、本文に適したフォント
+游ゴシック (Yu Gothic): モダンで視認性が高く、ウェブフォントとしてもよく使われます。本文やリンク、ヘッディング全てに適しています。
+メイリオ (Meiryo): 読みやすさに優れ、特に小さいサイズでも可読性が保たれます。リンクや本文に適しています。
+Noto Sans JP: Googleが提供するフォントで、広範囲のデバイスで安定した表示が可能です。本文やヘッディングに適しています。
+
+2. 英語フォント
+リンク、ヘッディング、本文に適したフォント
+Roboto: Googleが提供するモダンなサンセリフ体。ウェブでの使用に非常に適しており、リンク、ヘッディング、本文に全て適しています。
+Lato: 柔らかさとモダンさを兼ね備えたフォントで、特に本文やリンクでの使用に適しています。
+Open Sans: 非常に視認性が高く、幅広い場面で使用可能。本文やヘッディング、リンクに適しています。
+
+英語のロゴにふさわしいフォント
+Montserrat: モダンで洗練された印象を与えるサンセリフ体。特にロゴに使用する際、プロフェッショナルなイメージを与えます。
+Raleway: エレガントで洗練されたサンセリフ体。ロゴに使用すると、スタイリッシュな印象を持たせることができます。
+Playfair Display: セリフ体で、伝統的かつ高級感のあるデザインに適しています。クラシックでありながらモダンなロゴに使用できます。
+
+*/
+
+
+
+.common-header.mobile, .page-header.mobile {
+  display: none;
+}
+
+
+/* for header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.8s;
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* for common header */
+
+.common-header {
+  height: 60px;
+  display: flex;
+  border-bottom: solid 1px #b7b7b7;
+  width: 100%;
+}
+
+.left-side, .right-side {
+  width: 15%;
+  background-color: red;
+}
+
+.center-side {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center; 
+}
+
+.logo-link {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  z-index: 10;
+}
+
+.logo-letter {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.common-header nav, footer nav {  /* foe displaying nav lists horizontally  */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.common-header nav a, footer nav a {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.common-header nav a:hover, footer nav a:hover {
+  font-weight: bold;
+  transform: scale(1.2);
+}
+
+
+.common-header nav img, footer nav img {
+  height: 1.5rem;
+}
+
+.common-header nav ul, footer nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.common-header nav li, footer nav li {
+  margin-left: 40px;
+}
+
+header nav a, footer nav a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav a:hover, footer nav a:hover  {
+  color: #ff0000;
+}
+
+
+
+
+
+/** for text-size changer */
+
+
+.right-side div {
+  float: right;
+  background-color: red;
+}
+
+
+/* for translation
+#google_translate_element {
+
+}
+ */
+.goog-te-gadget-simple {
+  border: none !important;
+}
+
+header span {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+img.goog-te-gadget-icon {
+  display: none;
+}
+
+div.goog-te-gadget-simple {
+  border-radius: 5%;
+  cursor: pointer;
+  height: 20px;
+  padding: 0 2px;
+  margin-top: 5.5%;
+}
+
+div.goog-te-gadget-simple span {
+  color: white !important;
+  border: none !important;
+}
+
+header button {
+  font-size: 0.9rem;
+  padding: 0px 3.2px;
+  margin: 0;
+  border: none;
+  /* border: solid 0.5px #b7b7b7; */
+  height: 20px;
+  border-radius: 5%;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+div.goog-te-gadget-simple:hover, header button:hover {
+  background-color: #ff9a9a;
+  color: white;
+  border-color: #ff9a9a;
+}
+
+div.goog-te-gadget-simple:active, header button:active {
+  background-color: red;
+}
+
+
+
+
+
+/* for page-header */
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-bottom: solid 1px #b7b7b7;
+  position: relative;
+  padding: 0 10%; /*  両端にスペースを追加 */
+  width: 100%;
+}
+
+/* ナビゲーションの設定 */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.page-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.page-nav li.menu-item {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.page-nav li.menu-item {
+  box-sizing:content-box;
+  border: solid 0.5px #b7b7b7;
+}
+
+
+.page-nav .menu-item div, .page-nav .menu-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.page-nav .menu-item a:hover {
+  background-color: #e0e0e0;
+}
+
+/* サブメニューの設定 */
+ul.sub-menu {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.5s ease;
+  opacity: 1; 
+  position: absolute;
+  top: 100%; /* メニューアイテムの下に表示 */
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  z-index: 1000;
+}
+
+
+
+/* サブメニューのホバー効果 */                          
+li.menu-item:hover ul.sub-menu {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.sub-menu li {
+  width: 100%;
+  border: 1px solid #b7b7b7;
+  margin: 0;
+}
+
+.menu-item .sub-menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.menu-item .sub-menu li a:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+/* for Footer */
+footer {
+  width: 100%;
+  display: flex;
+  height: 100px;
+  margin-top: 2%;
+  border-top: solid 1px #b7b7b7;
+  border-bottom: solid 2px red;
+}
+
+
+
+
+
+
+/* for common setting */
+
+
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.secret {
+  height: 100px;
+  padding: 2% 0 0 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.heading {
+  padding: 5% 0 3% 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.description {
+  text-align: center;
+  padding-top: 3%;
+  font-style: italic;
+}
+
+h2 {
+  padding: 2% 0 0.5% 0;
+  border-bottom: solid 1px black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+section {
+  padding: 2% 0 3% 0;
+}
+
+section div {
+  padding: 2% 0 2% 0;
+}
+
+h3, h4 {
+  padding-bottom: 0%;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+main li {
+  list-style: none;
+  padding: 2% 0 0 0;
+  font-size: 1.2rem;
+}
+
+dt {
+  padding-top: 2%;
+  font-size: 1.3rem;
+}
+
+dd {
+  padding-top: 0.5%;
+  font-size: 1.2rem;
+}
+
+details {
+  padding: 0.5% 0;
+}
+
+summary {
+  font-size: 1.3rem;
+}
+
+h2, h3, h4, dt {
+  color: rgb(115, 0, 0);
+}
+
+
+
+
+
+div.gm-style div {
+  padding: 0;
+}
+
+
+/* Media queries */
+
+/* for Mobile */
+@media (max-width: 690px){
+
+  /* Header adjustments for mobile */
+  .common-header, .page-header {
+  display: none;
+  }
+
+  .common-header.mobile, .page-header.mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .common-header.mobile .right-side #google_translate_element {
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 3000;
+  }
+
+  img.goog-te-gadget-icon {
+    display: none;
+  }
+  
+  div.goog-te-gadget-simple {
+    border-radius: 5%;
+    cursor: pointer;
+    height: 20px;
+    padding: 0 2px;
+    margin-top: 5.5%;
+  }
+  
+  div.goog-te-gadget-simple span {
+    color: white !important;
+    border: none !important;
+  }
+  
+  header button {
+    font-size: 0.9rem;
+    padding: 0px 3.2px;
+    margin: 0;
+    border: none;
+    /* border: solid 0.5px #b7b7b7; */
+    height: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+  }
+  
+  div.goog-te-gadget-simple:hover, header button:hover {
+    background-color: #ff9a9a;
+    color: white;
+    border-color: #ff9a9a;
+  }
+  
+  div.goog-te-gadget-simple:active, header button:active {
+    background-color: red;
+  }
+
+
+
+
+
+
+
+  .page-header.mobile {
+    padding: 0;
+  }
+
+  .common-header.mobile {
+    height: 40px;
+    display: flex;
+  }
+
+
+  header .logo-letter {
+    font-size: 15px;
+  
+  }
+
+  .center-side {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .logo-letter {
+    color: black;
+  }
+
+  .mobile .page-nav .menu-item div, .mobile .page-nav .menu-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 2px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .page-nav li.menu-item:last-child div {
+    background-color:  #fff6f6;
+  }
+  
+  .page-nav li.menu-item:last-child ul.sub-menu li a {
+    background-color:  #fff6f6;
+  }
+
+  /* サブメニューのホバー効果 */                          
+  li.menu-item:hover ul.sub-menu {
+    display: block;
+  }
+  /* サブメニューのクリック効果 */                          
+  li.menu-item ul.sub-menu.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+  
+
+
+
+
+
+  footer {
+    font-size: 10px;
+    height: 80px;
+    border-bottom: solid 2px red;
+  } 
+
+  footer nav {  /* foe displaying nav lists horizontally  */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer nav ul {
+    display: flex;
+  }
+
+  footer nav li {
+    margin-left: 8px;
+    font-size: 0.55rem;
+  }
+
+  footer nav li a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer nav img {
+    height: 1.2rem;
+  }
+
+  footer .left-side, footer .right-side {
+    display: none;
+  }
+
+  footer .center-side {
+    width: 100%;
+  }
+
+
+
+
+  /* Main content adjustments for mobile */
+  main {
+    width: 90%;
+  }
+
+  .secret {
+    height: 100px;
+    padding: 2% 0 0 0;
+    text-align: center;
+  }
+  
+  .heading {
+    padding: 6% 0 4% 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .description {
+    text-align: center;
+    padding-top: 3%;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  section {
+    padding: 2% 0 5% 0;
+  }
+  
+  section div {
+    padding: 6% 0 2% 0;
+  }
+  
+  h3, h4 {
+    padding-bottom: 1.5%;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.4rem;
+  }
+  
+  main li {
+    list-style: none;
+    padding: 2% 0 0 0;
+    font-size: 1.1rem;
+  }
+  
+  dt {
+    padding-top: 5%;
+    font-size: 1.3rem;
+  }
+  
+  dd {
+    padding-top: 1.3%;
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1.1rem; /* same */
+    line-height: 2rem;
+  }
+    
+
+}
+
+
+
+
+
+@media (min-width: 1160px) and (max-width: 1400px) {
+
+
+
+  /*  default
+.logo-letter {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.common-header nav img, footer nav img {
+  height: 1.5rem;
+}
+.common-header nav li, footer nav li {
+  font-size: 1rem;
+  margin-left: 40px;
+}
+  
+  */
+
+  .logo-letter {
+    font-size: 1.2rem;
+  }
+
+  .common-header nav img, footer nav img {
+    height: 1.4rem;
+  }
+  
+  .common-header nav li, footer nav li {
+    margin-left: 30px;
+    font-size: 0.9rem;
+  }
+
+  
+}
+
+
+
+@media (min-width: 980px) and (max-width: 1160px) {
+
+  .logo-letter {
+    font-size: 1.1rem;
+  }
+  
+  .common-header nav img, footer nav img {
+    height: 1.3rem;
+  }
+  
+  .common-header nav li, footer nav li {
+    margin-left: 20px;
+    font-size: 0.8rem;
+  }
+
+  header span {
+    font-size: 0.9rem;
+  }
+  
+  div.goog-te-gadget-simple {
+    height: 20px;
+    padding: 0 2px;
+    margin-top: 5.5%;
+  }
+  
+  header button {
+    font-size: 0.85rem;
+    padding: 0px 2px;
+    margin: 0;
+    height: 20px;
+  }
+
+}
+
+
+@media (min-width: 880px) and (max-width: 980px) {
+
+  .logo-letter {
+    font-size: 1rem;
+  }
+  
+  .common-header nav img, footer nav img {
+    height: 1.2rem;
+  }
+  
+  .common-header nav li, footer nav li {
+    margin-left: 20px;
+    font-size: 0.7rem;
+  }
+  
+  header span {
+    font-size: 0.8rem;
+  }
+  
+  div.goog-te-gadget-simple {
+    height: 20px;
+    padding: 0 2px;
+    margin-top: 5.5%;
+  }
+  
+  header button {
+    font-size: 0.75rem;
+    padding: 0px 2px;
+    margin: 0;
+    height: 20px;
+  }
+
+}
+
+@media (min-width: 690px) and (max-width: 880px) {
+
+  .logo-letter {
+    font-size: 0.8rem;
+  }
+  
+  .common-header nav img, footer nav img {
+    height: 1.1rem;
+  }
+  
+  .common-header nav li, footer nav li {
+    margin-left: 15px;
+    font-size: 0.6rem;
+  }
+  
+  header span {
+    font-size: 0.6rem;
+  }
+  
+  div.goog-te-gadget-simple {
+    height: 20px;
+    padding: 0 2px;
+    margin-top: 5.5%;
+  }
+  
+  header button {
+    font-size: 0.55rem;
+    padding: 0px 2px;
+    margin: 0;
+    height: 20px;
+  }
+
+}
+
+@media (min-width: 1550px) {
+
+  .logo-letter {
+    font-size: 1.5rem;
+  }
+  
+  .common-header nav img, footer nav img {
+    height: 1.5rem;
+  }
+  
+  .common-header nav li, footer nav li {
+    margin-left: 45px;
+    font-size: 1.1rem;
+  }
+  
+  header span {
+    font-size: 1.3rem;
+  }
+  
+  div.goog-te-gadget-simple {
+    height: 25px;
+    padding: 0 2px;
+    margin-top: 2%;
+  }
+  
+  header button {
+    font-size: 1.15rem;
+    padding: 0px 4px;
+    margin: 0;
+    height: 30px;
+  }
+  
+}

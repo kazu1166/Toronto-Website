@@ -1,0 +1,54 @@
+
+
+section div {
+    padding: 2% 0 0 0;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+input.form {
+    height: 3rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+input.button {
+    font-size: 1rem;
+    margin-top: 2%;
+    height: 50px;
+    width: 100px;
+    border: solid 0.5px #b7b7b7;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+input.button:hover {
+    background-color: #ff9a9a;
+    color: white;
+    border-color: #ff9a9a;;
+    border-radius: 5%;
+}
+
+input.button:active {
+    color: white;
+    background-color: #ff0000;
+}
+
+section.result p {
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+}
+
+section.result span {
+    font-weight: bold;
+}
+
+@media (max-width: 690px){
+    input.button {
+        margin-top: 5%;
+    }
+    
+}

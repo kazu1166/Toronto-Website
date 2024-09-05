@@ -1,0 +1,94 @@
+/* for restaurants page */
+
+main li {
+  padding-top: 1%;
+}
+
+section div {
+  padding: 4% 0 2% 0;
+}
+
+main div {
+  padding-bottom: 0.5%;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(164, 0, 0);
+}
+
+details {
+  padding: 1% 0;
+}
+
+summary {
+  font-size: 1rem;
+}
+
+
+#niagara li {
+  font-size: 1.3rem;
+}
+
+#niagara section#map {
+  margin: 0 !important;
+}
+
+#niagara #plan li {
+  white-space: pre;
+}
+
+#niagara #plan .detail {
+  font-size: 1rem;
+}
+
+
+
+#niagara .time {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+/* Media queries */
+
+/* for Mobile */
+@media (max-width: 690px){
+
+  h3 {
+    padding-bottom: 0;
+  }
+
+  section div {
+    padding: 7% 0 0 0;
+  }
+
+  main li {
+      padding-top: 2%;
+  }
+
+  details {
+      padding: 2% 0;
+    }
+
+  #niagara #plan h3 {
+    font-size: 1.4rem;
+  }
+
+  #niagara li {
+    font-size: 1.1rem;
+  }
+  
+  #niagara #plan li {
+    white-space: normal;
+  }
+  
+  #niagara .time {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+    
+}

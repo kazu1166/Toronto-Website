@@ -1,0 +1,61 @@
+/* for index page */
+
+h3, h4 {
+  padding-bottom: 0.7%;
+}
+
+.images {
+  padding-top: 2%;
+  display: flex;
+  background-color: #fafeff;
+}
+
+.images .left-container, .images .right-container {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+main img {
+  width: 98%;
+  opacity: 1;
+  background-color: #fafeff;
+  padding-right: 2%;
+}
+
+img.zoomable {
+  max-width: none;  /* 拡大時に制約をなくす */
+  max-height: none; /* 拡大時に制約をなくす */
+}
+
+#immigrant-images {
+  display: flex;
+}
+
+#immigrant-images .left-container {
+  width: 60%;
+}
+
+#immigrant-images .right-container {
+  width: 40%;
+}
+
+#tip h3 {
+  padding-bottom: 0;
+}
+
+
+/* Media queries */
+
+/* for Mobile */
+@media (max-width: 690px){
+
+  img {
+    width: 100%;
+  }
+
+  #immigrant-images {
+    padding-bottom: -6%;
+  }
+
+}

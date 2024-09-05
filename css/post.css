@@ -1,0 +1,99 @@
+
+
+section {
+  padding-top: 5%;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column; /* フォーム内のフィールドを縦方向に配置 */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  label {
+    font-size: 1.2rem;
+  }
+  
+  input.form {
+    height: 3rem;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  select {
+    width: 40%;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  select#tags {
+    height: 10rem;
+  }
+  
+  input.button {
+    font-size: 1rem;
+    margin-right: 10px; /* リセットと送信ボタンの間にスペースを追加 */
+    height: 50px;
+    width: 100px;
+    border: solid 0.5px #b7b7b7;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+  input.button:hover {
+    background-color: #ff9a9a;
+    color: white;
+    border-color: #ff9a9a;;
+    border-radius: 5%;
+  }
+  
+  input.button:active {
+    color: white;
+    background-color: #ff0000;
+  }
+  
+  div.message {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* Media queries */
+  
+  /* for Mobile */
+  @media (max-width: 690px){
+  
+    section {
+      margin-bottom: 10%;
+    }
+  
+    label {
+      font-size: 1rem;
+    }
+
+
+    select {
+      height: 2rem;
+      width: 100%;
+    }
+
+    select#tags {
+      height: 2rem;
+      width: 100%;
+    }
+  
+  }
