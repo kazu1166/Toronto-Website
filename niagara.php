@@ -1,4 +1,4 @@
-<!-- codes for attractions page -->
+<!-- codes for niagara page -->
 
 <!-- PHP content for attractions page -->
 <?php 
